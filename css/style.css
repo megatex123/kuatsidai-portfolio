@@ -549,6 +549,42 @@ body {
   background: color-mix(in srgb, var(--accent) 8%, var(--surface));
 }
 
+/* ---------- Typewriter cursor ---------- */
+.type-cursor {
+  display: inline-block;
+  color: var(--accent);
+  font-weight: 300;
+  animation: blink 0.9s step-end infinite;
+  margin-left: 1px;
+}
+@keyframes blink { 0%,100%{ opacity:1 } 50%{ opacity:0 } }
+
+/* ---------- Scroll-reveal ---------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* ---------- Scrollspy nav active ---------- */
+.main-nav a.nav-active {
+  color: var(--accent);
+  position: relative;
+}
+.main-nav a.nav-active::after {
+  content: '';
+  position: absolute;
+  left: 0; right: 0; bottom: -4px;
+  height: 2px;
+  background: var(--accent);
+  border-radius: 2px;
+  box-shadow: var(--glow);
+}
+
 /* ---------- Footer ---------- */
 .site-footer {
   border-top: 1px solid var(--border);
