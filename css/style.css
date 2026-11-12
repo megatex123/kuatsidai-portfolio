@@ -463,6 +463,76 @@ body {
 .contact-label { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.5px; color: var(--text-muted); font-weight: 600; }
 .contact-value { font-weight: 600; word-break: break-word; }
 
+/* ---------- Projects ---------- */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+}
+.project-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.project-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.project-head h3 { font-size: 1rem; font-weight: 700; margin: 0; }
+.project-date { font-size: 0.78rem; color: var(--accent); font-weight: 600; white-space: nowrap; }
+.project-desc { font-size: 0.9rem; color: var(--text-muted); line-height: 1.6; flex: 1; }
+.project-links { display: flex; gap: 12px; }
+.project-links a { font-size: 0.85rem; font-weight: 600; color: var(--accent); text-decoration: none; }
+.project-links a:hover { text-decoration: underline; }
+
+/* ---------- Languages ---------- */
+.lang-grid {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.lang-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px 28px;
+  min-width: 140px;
+  text-align: center;
+}
+.lang-card h3 { font-size: 1rem; font-weight: 700; margin: 0 0 4px; }
+.lang-level { font-size: 0.82rem; color: var(--accent); font-weight: 600; margin: 0; }
+
+/* ---------- References ---------- */
+.ref-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.ref-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+  min-width: 260px;
+}
+.ref-card h3 { font-size: 1rem; font-weight: 700; margin: 0 0 4px; }
+.ref-title { font-size: 0.88rem; color: var(--accent); font-weight: 600; margin: 0 0 2px; }
+.ref-org { font-size: 0.85rem; color: var(--text-muted); margin: 0 0 8px; }
+.ref-note { font-size: 0.8rem; color: var(--text-muted); margin: 0; font-style: italic; }
+
+/* ---------- Cert highlight ---------- */
+.cert-card.cert-highlight {
+  border-color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 8%, var(--surface));
+}
+
 /* ---------- Footer ---------- */
 .site-footer {
   border-top: 1px solid var(--border);

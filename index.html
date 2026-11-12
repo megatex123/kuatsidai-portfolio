@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Megat Amirul — Full Stack Developer</title>
-<meta name="description" content="Portfolio of Megat Mohd Amirul Ikmal bin Mohd Nur, Full Stack Developer specializing in PHP Laravel, Vue.js and Ionic.">
+<title>Megat Amirul — Full Stack Developer &amp; Security-Minded Engineer</title>
+<meta name="description" content="Portfolio of Megat Mohd Amirul Ikmal bin Mohd Nur, Full Stack Developer with 6+ years building government and enterprise systems on PHP Laravel, Vue.js, Ionic, and Python.">
 <link rel="stylesheet" href="css/style.css">
 <script src="https://unpkg.com/htmx.org@1.9.12" defer></script>
 </head>
@@ -17,6 +17,7 @@
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
       <a href="#education">Education</a>
       <a href="#certifications">Certifications</a>
       <a href="#contact">Contact</a>
@@ -37,15 +38,16 @@
       <div class="hero-text">
         <p class="eyebrow">Hello, I'm</p>
         <h1>Megat Mohd Amirul Ikmal <span class="nowrap">bin Mohd Nur</span></h1>
-        <p class="role">Full Stack Developer — PHP Laravel · Vue.js · Ionic</p>
+        <p class="role">Full Stack Developer — PHP Laravel · Vue.js · Ionic · Security-Minded</p>
         <p class="lede">
-          5+ years building and maintaining production systems — from microservices architecture and
-          RESTful APIs to ETL data migration, performance testing, and server/security hardening.
-          Holds a Master's in Computer Science alongside full-time work as a developer.
+          6+ years building and maintaining production systems for government agencies — from
+          microservices architecture and RESTful APIs to ETL data migration, performance testing,
+          server hardening, and self-hosted AI automation. MSc Computer Science with a foundation
+          in Information Security &amp; Assurance.
         </p>
         <div class="hero-meta">
           <span>📍 Putrajaya, Malaysia</span>
-          <span>💼 5+ years experience</span>
+          <span>💼 6+ years experience</span>
           <span>🎓 MSc Computer Science (2025)</span>
         </div>
         <div class="cta-row">
@@ -62,13 +64,15 @@
       <h2 class="section-title"><span class="tag">01</span> About Me</h2>
       <div class="about-grid">
         <p class="about-text">
-          I'm a Full Stack Developer with 5+ years building and maintaining production systems on
-          <strong>PHP Laravel</strong>, <strong>Vue.js</strong>, and <strong>Ionic</strong>. I've worked across the
-          full delivery cycle — microservices architecture, RESTful API design, ETL data migration,
-          performance testing, and server/security hardening. I'm comfortable owning features end-to-end,
-          mentoring teammates through Transfer of Technology (TOT) sessions, and writing the documentation
-          that keeps systems maintainable long after go-live. I hold a Master's in Computer Science from
-          Universiti Teknologi MARA (2025).
+          I'm a Full Stack Developer with <strong>6+ years</strong> building and maintaining production systems
+          for <strong>government agencies and enterprise clients</strong> on <strong>PHP Laravel</strong>, <strong>Vue.js</strong>,
+          and <strong>Ionic</strong>. My work spans the full delivery cycle — microservices architecture,
+          RESTful API design, ETL data migration (Pentaho, Apache NiFi), performance testing, and
+          server/security hardening including PHP version upgrades and WordPress hardening. Beyond
+          day-to-day development, I build and run a <strong>self-hosted AI automation platform</strong> with
+          multi-service orchestration, Telegram bots, and Cloudflare Tunnel routing. I hold an
+          MSc in Computer Science from UiTM (2025) and a Bachelor's in Computer Science
+          (Information Security &amp; Assurance) from USIM.
         </p>
         <div class="about-card">
           <h3>Quick facts</h3>
@@ -137,9 +141,28 @@
         </div>
 
         <div class="skill-card">
+          <h3>AI &amp; Automation</h3>
+          <div class="pills">
+            <span class="pill">Python</span><span class="pill">FastAPI</span><span class="pill">APScheduler</span>
+            <span class="pill">Telegram Bot API</span><span class="pill">yfinance</span>
+            <span class="pill">Claude API</span><span class="pill">PM2</span><span class="pill">Cloudflare Tunnel</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <h3>Offensive Security (Lab)</h3>
+          <div class="pills">
+            <span class="pill">Kali Linux</span><span class="pill">Nmap</span><span class="pill">Metasploit</span>
+            <span class="pill">Burp Suite</span><span class="pill">Wireshark</span><span class="pill">OWASP Top 10</span>
+            <span class="pill">Autopsy (Digital Forensics)</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
           <h3>CMS</h3>
           <div class="pills">
-            <span class="pill">WordPress</span>
+            <span class="pill">WordPress</span><span class="pill">Security Hardening</span>
+            <span class="pill">Plugin Audit</span>
           </div>
         </div>
 
@@ -148,6 +171,7 @@
           <div class="pills">
             <span class="pill">UAT Docs</span><span class="pill">TOT Training</span>
             <span class="pill">Preventive Maintenance</span><span class="pill">IT Auditing (ISMS)</span>
+            <span class="pill">System Security Review</span>
           </div>
         </div>
 
@@ -169,20 +193,16 @@
               <span class="timeline-date">Oct 2020 – Present</span>
             </div>
             <p class="timeline-org">2en Apps Sdn Bhd · Cyberjaya, Malaysia</p>
-            <ul id="exp-fullstack-list">
-              <li>Build and maintain production systems end-to-end using PHP Laravel, Vue.js, and Ionic, covering backend APIs, frontend UI, and mobile-hybrid delivery.</li>
-              <li>Design and implement microservices to improve system scalability and long-term maintainability.</li>
-              <li>Own Git-based version control workflows across the team, keeping collaboration smooth and code history clean.</li>
-              <li>
-                <button class="link-btn"
-                        hx-get="partials/exp-fullstack-full.html"
-                        hx-target="#exp-fullstack-list"
-                        hx-swap="outerHTML"
-                        hx-indicator="#exp-fullstack-spinner">
-                  Show all 9 responsibilities ↓
-                </button>
-                <span id="exp-fullstack-spinner" class="htmx-indicator spinner"></span>
-              </li>
+            <ul>
+              <li>Build and maintain production systems for <strong>government agencies</strong> end-to-end using PHP Laravel, Vue.js, and Ionic — including a <em>Flood Information Portal</em>, <em>Anti-Corruption Monitoring System</em>, <em>Social Welfare Management System</em>, and <em>Chemistry Laboratory Information System</em>.</li>
+              <li>Led a <strong>PHP 7.4 → 8.3 / Laravel 12</strong> version upgrade across multiple live production systems, ensuring zero downtime and full backward compatibility.</li>
+              <li>Designed and implemented microservices architecture to improve system scalability and long-term maintainability.</li>
+              <li>Hardened <strong>WordPress</strong> sites for government clients — plugin audit, role minimisation, login brute-force protection, SSL/TLS configuration, and security-header enforcement.</li>
+              <li>Engineered <strong>ETL pipelines</strong> using Pentaho Data Integration and Apache NiFi (2025–2026) for cross-system data migration across government databases.</li>
+              <li>Drove performance testing (Apache JMeter) and load analysis to establish baseline SLAs before go-live.</li>
+              <li>Maintained Git-based version control workflows across the team; ran Transfer of Technology (TOT) sessions to onboard clients and junior developers.</li>
+              <li>Authored UAT documentation, preventive maintenance schedules, and ISMS IT audit artefacts aligned to client governance requirements.</li>
+              <li>Collaborated on mobile-hybrid delivery using Ionic for cross-platform government field applications.</li>
             </ul>
           </div>
         </article>
@@ -250,9 +270,74 @@
     </div>
   </section>
 
-  <section id="education" class="section alt">
+  <section id="projects" class="section alt">
     <div class="wrap">
-      <h2 class="section-title"><span class="tag">04</span> Education</h2>
+      <h2 class="section-title"><span class="tag">04</span> Projects</h2>
+      <div class="projects-grid">
+
+        <article class="project-card">
+          <div class="project-head">
+            <h3>Self-Hosted AI Development Platform</h3>
+            <span class="project-date">2024 – Present</span>
+          </div>
+          <p class="project-desc">
+            Multi-service home server running on a Linux workstation with 6+ pm2-managed processes:
+            an AI Dev Agent dashboard (React + Claude API), ETF market tracker with daily Telegram
+            reports, voice-to-text transcription service, QR code generator, and a system status
+            page. All subdomains routed via Cloudflare Tunnel with zero open inbound ports.
+          </p>
+          <div class="pills">
+            <span class="pill">Python</span><span class="pill">React</span><span class="pill">Node.js</span>
+            <span class="pill">Claude API</span><span class="pill">PM2</span><span class="pill">Cloudflare Tunnel</span>
+            <span class="pill">Telegram Bot API</span><span class="pill">APScheduler</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/megatex123" target="_blank" rel="noopener">GitHub ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-head">
+            <h3>Penetration Testing Home Lab</h3>
+            <span class="project-date">2025 – Present</span>
+          </div>
+          <p class="project-desc">
+            Isolated virtual lab environment for OSCP-style practice and security research.
+            Running Kali Linux with full offensive toolchain — Metasploit, Nmap, Burp Suite,
+            Wireshark, and Autopsy digital forensics. Covers OWASP Top 10 exploitation, network
+            reconnaissance, privilege escalation, and evidence collection techniques.
+          </p>
+          <div class="pills">
+            <span class="pill">Kali Linux</span><span class="pill">Metasploit</span><span class="pill">Nmap</span>
+            <span class="pill">Burp Suite</span><span class="pill">Wireshark</span>
+            <span class="pill">Autopsy</span><span class="pill">OWASP Top 10</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-head">
+            <h3>QuiviStock — Inventory Management System</h3>
+            <span class="project-date">2024 (Client: Quivitech)</span>
+          </div>
+          <p class="project-desc">
+            Full-stack inventory and stock-tracking platform built for Quivitech. Features
+            real-time stock level monitoring, multi-location warehouse support, supplier
+            management, purchase order workflow, and reporting dashboard. Delivered as a
+            responsive web application with a Laravel backend and Vue.js frontend.
+          </p>
+          <div class="pills">
+            <span class="pill">PHP Laravel</span><span class="pill">Vue.js</span>
+            <span class="pill">MySQL</span><span class="pill">RESTful API</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="education" class="section">
+    <div class="wrap">
+      <h2 class="section-title"><span class="tag">05</span> Education</h2>
       <div class="edu-grid">
 
         <div class="edu-card">
@@ -289,7 +374,7 @@
 
   <section id="certifications" class="section">
     <div class="wrap">
-      <h2 class="section-title"><span class="tag">05</span> Certifications</h2>
+      <h2 class="section-title"><span class="tag">06</span> Certifications</h2>
 
       <div class="cert-tabs" role="tablist">
         <button class="cert-tab active"
@@ -314,58 +399,102 @@
       </div>
 
       <div id="certs-list" class="cert-grid">
-        <div class="cert-card">
-          <h3>CompTIA Security+</h3>
-          <p class="cert-issuer">CompTIA</p>
-          <p class="cert-date">2026</p>
+
+        <div class="cert-card cert-highlight">
+          <h3>CompTIA Security+ SY0-701 Exam Prep Specialization</h3>
+          <p class="cert-issuer">Packt via Coursera</p>
+          <p class="cert-date">Jul 2026</p>
         </div>
+
         <div class="cert-card">
           <h3>Security Fundamentals and Identity Management</h3>
-          <p class="cert-issuer">Packt</p>
+          <p class="cert-issuer">Packt via Coursera</p>
           <p class="cert-date">May 2026</p>
         </div>
+
         <div class="cert-card">
-          <h3>CompTIA PenTest+ (PT0-002)</h3>
-          <p class="cert-issuer">Packt</p>
+          <h3>CompTIA PenTest+ (PT0-002) Specialization</h3>
+          <p class="cert-issuer">Packt via Coursera</p>
           <p class="cert-date">May 2026</p>
         </div>
+
         <div class="cert-card">
           <h3>Foundations and Reconnaissance Techniques</h3>
-          <p class="cert-issuer">Packt</p>
+          <p class="cert-issuer">Packt via Coursera</p>
           <p class="cert-date">May 2026</p>
         </div>
+
         <div class="cert-card">
           <h3>Advanced Penetration Techniques</h3>
-          <p class="cert-issuer">Packt</p>
+          <p class="cert-issuer">Packt via Coursera</p>
           <p class="cert-date">May 2026</p>
         </div>
+
         <div class="cert-card">
           <h3>Cybersecurity Within IT and ICS Domains</h3>
           <p class="cert-issuer">ICS-CERT, U.S. DHS</p>
           <p class="cert-date">Apr 2020</p>
         </div>
+
         <div class="cert-card">
           <h3>Common ICS Components</h3>
           <p class="cert-issuer">ICS-CERT, U.S. DHS</p>
           <p class="cert-date">Apr 2020</p>
         </div>
+
         <div class="cert-card">
           <h3>ICS Cybersecurity Landscape for Managers</h3>
           <p class="cert-issuer">ICS-CERT, U.S. DHS</p>
           <p class="cert-date">Apr 2020</p>
         </div>
+
         <div class="cert-card">
           <h3>Autopsy Digital Forensics</h3>
           <p class="cert-issuer">Cyber Triage</p>
           <p class="cert-date">Apr 2020</p>
         </div>
+
       </div>
     </div>
   </section>
 
-  <section id="contact" class="section alt">
+  <section id="languages" class="section">
     <div class="wrap">
-      <h2 class="section-title"><span class="tag">06</span> Contact</h2>
+      <h2 class="section-title"><span class="tag">08</span> Languages</h2>
+      <div class="lang-grid">
+        <div class="lang-card">
+          <h3>Malay</h3>
+          <p class="lang-level">Native / Fluent</p>
+        </div>
+        <div class="lang-card">
+          <h3>English</h3>
+          <p class="lang-level">Fluent (Professional)</p>
+        </div>
+        <div class="lang-card">
+          <h3>Arabic</h3>
+          <p class="lang-level">Elementary (B1)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="references" class="section alt">
+    <div class="wrap">
+      <h2 class="section-title"><span class="tag">09</span> References</h2>
+      <div class="ref-grid">
+        <div class="ref-card">
+          <h3>Mr. Badrul Nizam</h3>
+          <p class="ref-title">Director / Technical Lead</p>
+          <p class="ref-org">2en Apps Sdn Bhd · Cyberjaya, Malaysia</p>
+          <p class="ref-note">Available on request</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="wrap">
+      <h2 class="section-title"><span class="tag">07</span> Contact</h2>
       <p class="contact-lede">Have a project in mind or just want to connect? Reach out through any of these channels.</p>
       <div class="contact-grid">
         <a class="contact-card" href="/cdn-cgi/l/email-protection#dbb6bebcbaafbab6b2a9aeb7ef9bbcb6bab2b7f5b8b4b6">
