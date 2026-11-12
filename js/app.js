@@ -25,10 +25,13 @@ mainNav.querySelectorAll('a').forEach(link => {
   link.addEventListener('click', () => mainNav.classList.remove('open'));
 });
 
-function filterCerts(cat, btn) {
-  document.querySelectorAll('.cert-tab').forEach(b => b.classList.remove('active'));
-  btn.classList.add('active');
-  document.querySelectorAll('#certs-list .cert-card').forEach(card => {
-    card.style.display = (cat === 'all' || card.dataset.cat === cat) ? '' : 'none';
+document.querySelectorAll('.cert-tab').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const cat = btn.dataset.filter;
+    document.querySelectorAll('.cert-tab').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    document.querySelectorAll('#certs-list .cert-card').forEach(card => {
+      card.style.display = (cat === 'all' || card.dataset.cat === cat) ? '' : 'none';
+    });
   });
-}
+});
