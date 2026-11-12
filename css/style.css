@@ -588,6 +588,7 @@ body {
 .hero {
   position: relative;
   overflow: hidden;
+  min-height: unset;
 }
 .hero .wrap { position: relative; z-index: 1; }
 
@@ -651,6 +652,7 @@ body {
 @media (max-width: 900px) {
   .hero-terminal { display: none; }
 }
+:root[data-theme="light"] .hero-terminal { display: none; }
 
 /* ---------- Typewriter cursor ---------- */
 .type-cursor {

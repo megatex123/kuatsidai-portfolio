@@ -66,8 +66,9 @@ document.querySelectorAll('a,button,.skill-card,.project-card,.cert-card,.edu-ca
   let cols, drops;
 
   function resize() {
-    canvas.width  = canvas.offsetWidth;
-    canvas.height = canvas.offsetHeight;
+    const hero = canvas.parentElement;
+    canvas.width  = hero.offsetWidth;
+    canvas.height = hero.offsetHeight;
     cols  = Math.floor(canvas.width / fontSize);
     drops = Array(cols).fill(0).map(() => Math.random() * -50);
   }
