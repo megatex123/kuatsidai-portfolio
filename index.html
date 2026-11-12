@@ -377,78 +377,62 @@
       <h2 class="section-title"><span class="tag">06</span> Certifications</h2>
 
       <div class="cert-tabs" role="tablist">
-        <button class="cert-tab active"
-                hx-get="partials/certs-all.html" hx-target="#certs-list" hx-swap="innerHTML"
-                hx-indicator="#certs-spinner"
-                onclick="document.querySelectorAll('.cert-tab').forEach(b=>b.classList.remove('active'));this.classList.add('active');">
-          All
-        </button>
-        <button class="cert-tab"
-                hx-get="partials/certs-security.html" hx-target="#certs-list" hx-swap="innerHTML"
-                hx-indicator="#certs-spinner"
-                onclick="document.querySelectorAll('.cert-tab').forEach(b=>b.classList.remove('active'));this.classList.add('active');">
-          Security &amp; PenTest
-        </button>
-        <button class="cert-tab"
-                hx-get="partials/certs-ics.html" hx-target="#certs-list" hx-swap="innerHTML"
-                hx-indicator="#certs-spinner"
-                onclick="document.querySelectorAll('.cert-tab').forEach(b=>b.classList.remove('active'));this.classList.add('active');">
-          ICS / Critical Infrastructure
-        </button>
-        <span id="certs-spinner" class="htmx-indicator spinner"></span>
+        <button class="cert-tab active" onclick="filterCerts('all', this)">All</button>
+        <button class="cert-tab" onclick="filterCerts('security', this)">Security &amp; PenTest</button>
+        <button class="cert-tab" onclick="filterCerts('ics', this)">ICS / Critical Infrastructure</button>
       </div>
 
       <div id="certs-list" class="cert-grid">
 
-        <div class="cert-card cert-highlight">
+        <div class="cert-card cert-highlight" data-cat="security">
           <h3>CompTIA Security+ SY0-701 Exam Prep Specialization</h3>
           <p class="cert-issuer">Packt via Coursera</p>
           <p class="cert-date">Jul 2026</p>
         </div>
 
-        <div class="cert-card">
+        <div class="cert-card" data-cat="security">
           <h3>Security Fundamentals and Identity Management</h3>
           <p class="cert-issuer">Packt via Coursera</p>
           <p class="cert-date">May 2026</p>
         </div>
 
-        <div class="cert-card">
+        <div class="cert-card" data-cat="security">
           <h3>CompTIA PenTest+ (PT0-002) Specialization</h3>
           <p class="cert-issuer">Packt via Coursera</p>
           <p class="cert-date">May 2026</p>
         </div>
 
-        <div class="cert-card">
+        <div class="cert-card" data-cat="security">
           <h3>Foundations and Reconnaissance Techniques</h3>
           <p class="cert-issuer">Packt via Coursera</p>
           <p class="cert-date">May 2026</p>
         </div>
 
-        <div class="cert-card">
+        <div class="cert-card" data-cat="security">
           <h3>Advanced Penetration Techniques</h3>
           <p class="cert-issuer">Packt via Coursera</p>
           <p class="cert-date">May 2026</p>
         </div>
 
-        <div class="cert-card">
+        <div class="cert-card" data-cat="ics">
           <h3>Cybersecurity Within IT and ICS Domains</h3>
           <p class="cert-issuer">ICS-CERT, U.S. DHS</p>
           <p class="cert-date">Apr 2020</p>
         </div>
 
-        <div class="cert-card">
+        <div class="cert-card" data-cat="ics">
           <h3>Common ICS Components</h3>
           <p class="cert-issuer">ICS-CERT, U.S. DHS</p>
           <p class="cert-date">Apr 2020</p>
         </div>
 
-        <div class="cert-card">
+        <div class="cert-card" data-cat="ics">
           <h3>ICS Cybersecurity Landscape for Managers</h3>
           <p class="cert-issuer">ICS-CERT, U.S. DHS</p>
           <p class="cert-date">Apr 2020</p>
         </div>
 
-        <div class="cert-card">
+        <div class="cert-card" data-cat="security">
           <h3>Autopsy Digital Forensics</h3>
           <p class="cert-issuer">Cyber Triage</p>
           <p class="cert-date">Apr 2020</p>
