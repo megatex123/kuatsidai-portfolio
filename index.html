@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Megat Amirul — Full Stack Developer</title>
+<meta name="description" content="Portfolio of Megat Mohd Amirul Ikmal bin Mohd Nur, Full Stack Developer specializing in PHP Laravel, Vue.js and Ionic.">
+<link rel="stylesheet" href="css/style.css">
+<script src="https://unpkg.com/htmx.org@1.9.12" defer></script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="#home" class="brand">MA<span>.</span></a>
+    <nav class="main-nav" id="main-nav">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button id="theme-toggle" aria-label="Toggle color theme" title="Toggle theme">🌙</button>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section id="home" class="hero">
+    <div class="wrap hero-inner">
+      <div class="hero-text">
+        <p class="eyebrow">Hello, I'm</p>
+        <h1>Megat Mohd Amirul Ikmal <span class="nowrap">bin Mohd Nur</span></h1>
+        <p class="role">Full Stack Developer — PHP Laravel · Vue.js · Ionic</p>
+        <p class="lede">
+          5+ years building and maintaining production systems — from microservices architecture and
+          RESTful APIs to ETL data migration, performance testing, and server/security hardening.
+          Holds a Master's in Computer Science alongside full-time work as a developer.
+        </p>
+        <div class="hero-meta">
+          <span>📍 Putrajaya, Malaysia</span>
+          <span>💼 5+ years experience</span>
+          <span>🎓 MSc Computer Science (2025)</span>
+        </div>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#contact">Get in touch</a>
+          <a class="btn btn-ghost" href="https://github.com/megatex123" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn btn-ghost" href="https://linkedin.com/in/megat-amirul-42900119a" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="wrap">
+      <h2 class="section-title"><span class="tag">01</span> About Me</h2>
+      <div class="about-grid">
+        <p class="about-text">
+          I'm a Full Stack Developer with 5+ years building and maintaining production systems on
+          <strong>PHP Laravel</strong>, <strong>Vue.js</strong>, and <strong>Ionic</strong>. I've worked across the
+          full delivery cycle — microservices architecture, RESTful API design, ETL data migration,
+          performance testing, and server/security hardening. I'm comfortable owning features end-to-end,
+          mentoring teammates through Transfer of Technology (TOT) sessions, and writing the documentation
+          that keeps systems maintainable long after go-live. I hold a Master's in Computer Science from
+          Universiti Teknologi MARA (2025).
+        </p>
+        <div class="about-card">
+          <h3>Quick facts</h3>
+          <ul class="facts-list">
+            <li><strong>Based in</strong> Putrajaya, Malaysia</li>
+            <li><strong>Currently</strong> Full Stack Developer @ 2en Apps Sdn Bhd</li>
+            <li><strong>Education</strong> MSc Computer Science, UiTM Shah Alam (2025)</li>
+            <li><strong>Languages</strong> Malay (Fluent), English (Fluent), Arabic (B1)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section alt">
+    <div class="wrap">
+      <h2 class="section-title"><span class="tag">02</span> Skills</h2>
+      <div class="skills-grid">
+
+        <div class="skill-card">
+          <h3>Full Stack</h3>
+          <div class="pills">
+            <span class="pill">PHP</span><span class="pill">Laravel</span><span class="pill">Vue.js</span>
+            <span class="pill">Node.js</span><span class="pill">Python</span><span class="pill">FastAPI</span>
+            <span class="pill">RESTful APIs</span><span class="pill">Microservices</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <h3>Mobile Development</h3>
+          <div class="pills">
+            <span class="pill">Ionic</span><span class="pill">React Native</span><span class="pill">Expo</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <h3>Web Fundamentals</h3>
+          <div class="pills">
+            <span class="pill">HTML</span><span class="pill">CSS</span><span class="pill">JavaScript</span>
+            <span class="pill">AJAX</span><span class="pill">HTMX</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <h3>Databases</h3>
+          <div class="pills">
+            <span class="pill">MySQL</span><span class="pill">SQL</span><span class="pill">MongoDB</span>
+            <span class="pill">DB Design</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <h3>Data &amp; ETL</h3>
+          <div class="pills">
+            <span class="pill">Pentaho</span><span class="pill">Apache NiFi</span><span class="pill">SSIS</span>
+            <span class="pill">Superset</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <h3>DevOps &amp; Tools</h3>
+          <div class="pills">
+            <span class="pill">Git</span><span class="pill">SSL Config</span><span class="pill">Server Mgmt</span>
+            <span class="pill">Apache</span><span class="pill">JMeter</span><span class="pill">Linux</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <h3>CMS</h3>
+          <div class="pills">
+            <span class="pill">WordPress</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <h3>Practices</h3>
+          <div class="pills">
+            <span class="pill">UAT Docs</span><span class="pill">TOT Training</span>
+            <span class="pill">Preventive Maintenance</span><span class="pill">IT Auditing (ISMS)</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="section">
+    <div class="wrap">
+      <h2 class="section-title"><span class="tag">03</span> Experience</h2>
+
+      <div class="timeline">
+
+        <article class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-head">
+              <h3>Full Stack Developer</h3>
+              <span class="timeline-date">Oct 2020 – Present</span>
+            </div>
+            <p class="timeline-org">2en Apps Sdn Bhd · Cyberjaya, Malaysia</p>
+            <ul id="exp-fullstack-list">
+              <li>Build and maintain production systems end-to-end using PHP Laravel, Vue.js, and Ionic, covering backend APIs, frontend UI, and mobile-hybrid delivery.</li>
+              <li>Design and implement microservices to improve system scalability and long-term maintainability.</li>
+              <li>Own Git-based version control workflows across the team, keeping collaboration smooth and code history clean.</li>
+              <li>
+                <button class="link-btn"
+                        hx-get="partials/exp-fullstack-full.html"
+                        hx-target="#exp-fullstack-list"
+                        hx-swap="outerHTML"
+                        hx-indicator="#exp-fullstack-spinner">
+                  Show all 9 responsibilities ↓
+                </button>
+                <span id="exp-fullstack-spinner" class="htmx-indicator spinner"></span>
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-head">
+              <h3>Software Engineer</h3>
+              <span class="timeline-date">Jun 2020 – Oct 2020</span>
+            </div>
+            <p class="timeline-org">2en Apps Sdn Bhd · Cyberjaya, Malaysia</p>
+            <ul>
+              <li>Developed and maintained SQL/PHP-based applications aligned to client requirements and industry standards.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-head">
+              <h3>Web Developer (Internship)</h3>
+              <span class="timeline-date">Jan 2020 – Jun 2020</span>
+            </div>
+            <p class="timeline-org">2en Apps Sdn Bhd · Ampang, Malaysia</p>
+            <ul>
+              <li>Assisted in development and testing of web applications, building hands-on coding and troubleshooting experience.</li>
+              <li>Contributed to SQL and PHP development across multiple project components.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-head">
+              <h3>Freelance Web Designer</h3>
+              <span class="timeline-date">Nov 2019 – Feb 2020</span>
+            </div>
+            <p class="timeline-org">Palapes USIM · Nilai, Malaysia</p>
+            <ul>
+              <li>Designed and built dynamic websites in HTML and PHP, tailored to client specifications.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-head">
+              <h3>IT Officer</h3>
+              <span class="timeline-date">Jan 2018 – Oct 2019</span>
+            </div>
+            <p class="timeline-org">Palapes USIM · Nilai, Malaysia</p>
+            <ul>
+              <li>Turned approved base designs into complex working models in line with project specifications.</li>
+              <li>Balanced competing stakeholder needs when evaluating design solutions.</li>
+              <li>Managed content and site updates using WordPress.</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="education" class="section alt">
+    <div class="wrap">
+      <h2 class="section-title"><span class="tag">04</span> Education</h2>
+      <div class="edu-grid">
+
+        <div class="edu-card">
+          <h3>Master of Computer Science</h3>
+          <p class="edu-org">Universiti Teknologi MARA · Shah Alam, Malaysia</p>
+          <p class="edu-date">Mar 2023 – Aug 2025</p>
+          <p class="edu-note">GPA: 3.33</p>
+        </div>
+
+        <div class="edu-card">
+          <h3>Bachelor's — Computer Science <span class="muted">(Information Security &amp; Assurance)</span></h3>
+          <p class="edu-org">Universiti Sains Islam Malaysia · Nilai, Malaysia</p>
+          <p class="edu-date">2016 – 2020</p>
+          <p class="edu-note">GPA: 2.76</p>
+        </div>
+
+        <div class="edu-card">
+          <h3>Matriculation — Pure Science</h3>
+          <p class="edu-org">Kolej Matrikulasi Negeri Sembilan · Kuala Pilah, Malaysia</p>
+          <p class="edu-date">2015 – 2016</p>
+          <p class="edu-note">GPA: 2.12</p>
+        </div>
+
+        <div class="edu-card">
+          <h3>SPM — Pure Science</h3>
+          <p class="edu-org">SMK Putrajaya Presint 8 (1) · Putrajaya, Malaysia</p>
+          <p class="edu-date">2010 – 2014</p>
+          <p class="edu-note">2A, 3B, 6C</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="certifications" class="section">
+    <div class="wrap">
+      <h2 class="section-title"><span class="tag">05</span> Certifications</h2>
+
+      <div class="cert-tabs" role="tablist">
+        <button class="cert-tab active"
+                hx-get="partials/certs-all.html" hx-target="#certs-list" hx-swap="innerHTML"
+                hx-indicator="#certs-spinner"
+                onclick="document.querySelectorAll('.cert-tab').forEach(b=>b.classList.remove('active'));this.classList.add('active');">
+          All
+        </button>
+        <button class="cert-tab"
+                hx-get="partials/certs-security.html" hx-target="#certs-list" hx-swap="innerHTML"
+                hx-indicator="#certs-spinner"
+                onclick="document.querySelectorAll('.cert-tab').forEach(b=>b.classList.remove('active'));this.classList.add('active');">
+          Security &amp; PenTest
+        </button>
+        <button class="cert-tab"
+                hx-get="partials/certs-ics.html" hx-target="#certs-list" hx-swap="innerHTML"
+                hx-indicator="#certs-spinner"
+                onclick="document.querySelectorAll('.cert-tab').forEach(b=>b.classList.remove('active'));this.classList.add('active');">
+          ICS / Critical Infrastructure
+        </button>
+        <span id="certs-spinner" class="htmx-indicator spinner"></span>
+      </div>
+
+      <div id="certs-list" class="cert-grid">
+        <div class="cert-card">
+          <h3>Security Fundamentals and Identity Management</h3>
+          <p class="cert-issuer">Packt</p>
+          <p class="cert-date">May 2026</p>
+        </div>
+        <div class="cert-card">
+          <h3>CompTIA PenTest+ (PT0-002)</h3>
+          <p class="cert-issuer">Packt</p>
+          <p class="cert-date">May 2026</p>
+        </div>
+        <div class="cert-card">
+          <h3>Foundations and Reconnaissance Techniques</h3>
+          <p class="cert-issuer">Packt</p>
+          <p class="cert-date">May 2026</p>
+        </div>
+        <div class="cert-card">
+          <h3>Advanced Penetration Techniques</h3>
+          <p class="cert-issuer">Packt</p>
+          <p class="cert-date">May 2026</p>
+        </div>
+        <div class="cert-card">
+          <h3>Cybersecurity Within IT and ICS Domains</h3>
+          <p class="cert-issuer">ICS-CERT, U.S. DHS</p>
+          <p class="cert-date">Apr 2020</p>
+        </div>
+        <div class="cert-card">
+          <h3>Common ICS Components</h3>
+          <p class="cert-issuer">ICS-CERT, U.S. DHS</p>
+          <p class="cert-date">Apr 2020</p>
+        </div>
+        <div class="cert-card">
+          <h3>ICS Cybersecurity Landscape for Managers</h3>
+          <p class="cert-issuer">ICS-CERT, U.S. DHS</p>
+          <p class="cert-date">Apr 2020</p>
+        </div>
+        <div class="cert-card">
+          <h3>Autopsy Digital Forensics</h3>
+          <p class="cert-issuer">Cyber Triage</p>
+          <p class="cert-date">Apr 2020</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section alt">
+    <div class="wrap">
+      <h2 class="section-title"><span class="tag">06</span> Contact</h2>
+      <p class="contact-lede">Have a project in mind or just want to connect? Reach out through any of these channels.</p>
+      <div class="contact-grid">
+        <a class="contact-card" href="/cdn-cgi/l/email-protection#dbb6bebcbaafbab6b2a9aeb7ef9bbcb6bab2b7f5b8b4b6">
+          <span class="contact-icon">✉️</span>
+          <span class="contact-label">Email</span>
+          <span class="contact-value"><span class="__cf_email__" data-cfemail="bfd2dad8decbded2d6cdcad38bffd8d2ded6d391dcd0d2">[email&#160;protected]</span></span>
+        </a>
+        <a class="contact-card" href="tel:+60167310233">
+          <span class="contact-icon">📞</span>
+          <span class="contact-label">Phone</span>
+          <span class="contact-value">016-731 0233</span>
+        </a>
+        <a class="contact-card" href="https://linkedin.com/in/megat-amirul-42900119a" target="_blank" rel="noopener">
+          <span class="contact-icon">💼</span>
+          <span class="contact-label">LinkedIn</span>
+          <span class="contact-value">megat-amirul-42900119a</span>
+        </a>
+        <a class="contact-card" href="https://github.com/megatex123" target="_blank" rel="noopener">
+          <span class="contact-icon">💻</span>
+          <span class="contact-label">GitHub</span>
+          <span class="contact-value">megatex123</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>&copy; <span id="year"></span> Megat Mohd Amirul Ikmal bin Mohd Nur. Built with HTML, CSS &amp; HTMX.</p>
+  </div>
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/app.js"></script>
+</body>
+</html>
