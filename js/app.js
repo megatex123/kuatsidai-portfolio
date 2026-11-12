@@ -4,11 +4,9 @@ document.getElementById('year').textContent = new Date().getFullYear();
 /* ── Theme toggle ── */
 const root = document.documentElement;
 const themeToggle = document.getElementById('theme-toggle');
-const savedTheme = localStorage.getItem('theme');
-if (savedTheme) {
-  root.setAttribute('data-theme', savedTheme);
-  themeToggle.textContent = savedTheme === 'dark' ? '🌙' : '☀️';
-}
+const savedTheme = localStorage.getItem('theme') || 'dark';
+root.setAttribute('data-theme', savedTheme);
+themeToggle.textContent = savedTheme === 'dark' ? '🌙' : '☀️';
 themeToggle.addEventListener('click', () => {
   const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
   root.setAttribute('data-theme', next);
